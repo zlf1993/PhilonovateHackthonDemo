@@ -14,6 +14,7 @@
 		30B92EB6201D2F12007F0E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B92EB4201D2F12007F0E00 /* LaunchScreen.storyboard */; };
 		30B92EC1201D2F13007F0E00 /* ConUhackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B92EC0201D2F13007F0E00 /* ConUhackTests.swift */; };
 		30B92ECC201D2F13007F0E00 /* ConUhackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B92ECB201D2F13007F0E00 /* ConUhackUITests.swift */; };
+		E4F8AD75201D82EF0013803D /* View2ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F8AD74201D82EF0013803D /* View2ControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		30B92EC7201D2F13007F0E00 /* ConUhackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConUhackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B92ECB201D2F13007F0E00 /* ConUhackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConUhackUITests.swift; sourceTree = "<group>"; };
 		30B92ECD201D2F13007F0E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F8AD73201D7A1A0013803D /* ConUhack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConUhack.entitlements; sourceTree = "<group>"; };
+		E4F8AD74201D82EF0013803D /* View2ControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2ControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +100,14 @@
 		30B92EAA201D2F12007F0E00 /* ConUhack */ = {
 			isa = PBXGroup;
 			children = (
+				E4F8AD73201D7A1A0013803D /* ConUhack.entitlements */,
 				30B92EAB201D2F12007F0E00 /* AppDelegate.swift */,
 				30B92EAD201D2F12007F0E00 /* ViewController.swift */,
 				30B92EAF201D2F12007F0E00 /* Main.storyboard */,
 				30B92EB2201D2F12007F0E00 /* Assets.xcassets */,
 				30B92EB4201D2F12007F0E00 /* LaunchScreen.storyboard */,
 				30B92EB7201D2F12007F0E00 /* Info.plist */,
+				E4F8AD74201D82EF0013803D /* View2ControllerViewController.swift */,
 			);
 			path = ConUhack;
 			sourceTree = "<group>";
@@ -194,6 +199,11 @@
 					30B92EA7201D2F12007F0E00 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					30B92EBB201D2F13007F0E00 = {
 						CreatedOnToolsVersion = 9.2;
@@ -260,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B92EAE201D2F12007F0E00 /* ViewController.swift in Sources */,
+				E4F8AD75201D82EF0013803D /* View2ControllerViewController.swift in Sources */,
 				30B92EAC201D2F12007F0E00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,12 +437,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConUhack/ConUhack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y7FX9HCLE2;
+				DEVELOPMENT_TEAM = WRAMNS25U3;
 				INFOPLIST_FILE = ConUhack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Li.ConUhack;
+				PRODUCT_BUNDLE_IDENTIFIER = test.abc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,12 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConUhack/ConUhack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y7FX9HCLE2;
+				DEVELOPMENT_TEAM = WRAMNS25U3;
 				INFOPLIST_FILE = ConUhack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Li.ConUhack;
+				PRODUCT_BUNDLE_IDENTIFIER = test.abc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
