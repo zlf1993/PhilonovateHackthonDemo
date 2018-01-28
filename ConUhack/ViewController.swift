@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
     var word = "";
-     let time: [String] = ["days","day","weeks","week","month","months"]
+     let time: [String] = ["days","day","weeks","week","month","months","year","years"]
     var med: [String] = []
     var dic : [String:String] = ["time period":"" , "times":"", "medicine":""]
     
@@ -153,11 +153,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 for index in 0..<tokens.count{
                     if(time.contains(tokens[index])){
                         print(tokens[index-1])
+                        print(tokens[index-2])
                         if(!tokens[index-2].elementsEqual("times")){
                              dic["time period"] = tokens[index-1]  + " " + tokens[index]
                         }
-                        //break
-                    }else if(tokens[index].elementsEqual("everyday")){
+                        
+                    }
+                    if(tokens[index].elementsEqual("everyday")){
                         print("everyday")
                         dic["time period"] = "everyday"
                     }
@@ -210,16 +212,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if let tag = tag {
                // print("\(word) : \(tag.rawValue)")
                 if(tag.rawValue.elementsEqual("Noun")){
+                    //med[0] = word
                     med.append(word)
                 }
             }
         }
-        if !dic.isEmpty {
+        if (!med.isEmpty) {
             dic["medicine"] = med[0]
         }
     }
 //    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        
+//
 //    }
 //    func textFieldDidEndEditing(_ textField: UITextField) {
 //        
