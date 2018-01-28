@@ -6,6 +6,7 @@
 //  Copyright © 2018 Li arthur. All rights reserved.
 //
 
+import CoreMotion
 import UIKit
 import Speech
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -133,6 +134,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
   
+    @IBOutlet weak var GravityButton: UIButton!
     @IBOutlet weak var medTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var freTextField: UITextField!
