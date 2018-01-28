@@ -15,6 +15,7 @@
 		30B92EC1201D2F13007F0E00 /* ConUhackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B92EC0201D2F13007F0E00 /* ConUhackTests.swift */; };
 		30B92ECC201D2F13007F0E00 /* ConUhackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B92ECB201D2F13007F0E00 /* ConUhackUITests.swift */; };
 		E4F8AD75201D82EF0013803D /* View2ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F8AD74201D82EF0013803D /* View2ControllerViewController.swift */; };
+		E4F8AD79201D99DB0013803D /* smsandcall.py in Resources */ = {isa = PBXBuildFile; fileRef = E4F8AD78201D99DB0013803D /* smsandcall.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		30B92ECD201D2F13007F0E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F8AD73201D7A1A0013803D /* ConUhack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConUhack.entitlements; sourceTree = "<group>"; };
 		E4F8AD74201D82EF0013803D /* View2ControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2ControllerViewController.swift; sourceTree = "<group>"; };
+		E4F8AD78201D99DB0013803D /* smsandcall.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = smsandcall.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		30B92E9F201D2F12007F0E00 = {
 			isa = PBXGroup;
 			children = (
+				E4F8AD78201D99DB0013803D /* smsandcall.py */,
 				30B92EAA201D2F12007F0E00 /* ConUhack */,
 				30B92EBF201D2F13007F0E00 /* ConUhackTests */,
 				30B92ECA201D2F13007F0E00 /* ConUhackUITests */,
@@ -244,6 +247,7 @@
 			files = (
 				30B92EB6201D2F12007F0E00 /* LaunchScreen.storyboard in Resources */,
 				30B92EB3201D2F12007F0E00 /* Assets.xcassets in Resources */,
+				E4F8AD79201D99DB0013803D /* smsandcall.py in Resources */,
 				30B92EB1201D2F12007F0E00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
